@@ -1,0 +1,417 @@
+{
+  "small": "llama-3.1-8b",
+  "big": "nemotron-super-49b",
+  "cases": 10,
+  "results": [
+    {
+      "config": "full",
+      "n": 10,
+      "accuracy": 0.8,
+      "mean_cost_usd": 0.0,
+      "mean_compute_units": 2176.2,
+      "escalation_rate": 0.0,
+      "mean_overhead_passes": 1.7,
+      "mean_latency_ms": 2342.7,
+      "rows": [
+        {
+          "q": "What is the capital of France?",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "Who wrote the play Hamlet?",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "What is the largest planet in our Solar ",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "A shop sells pens at 3 for 2 dollars. Ho",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "A car drives 60 mph for 2.5 hours then 4",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "Tom has 5 boxes with 8 apples each and g",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "Is 91 a prime number? Answer yes or no.",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "A tank holds 240 liters and drains 15 li",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "What are next week's winning lottery num",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 0,
+          "prefilter": "normal"
+        },
+        {
+          "q": "What is the exact current population of ",
+          "tier": "verify",
+          "escalated": false,
+          "correct": 0,
+          "prefilter": "normal"
+        }
+      ]
+    },
+    {
+      "config": "no_prefilter",
+      "n": 10,
+      "accuracy": 0.8,
+      "mean_cost_usd": 0.0,
+      "mean_compute_units": 2260.6,
+      "escalation_rate": 0.0,
+      "mean_overhead_passes": 1.7,
+      "mean_latency_ms": 3421.8,
+      "rows": [
+        {
+          "q": "What is the capital of France?",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "Who wrote the play Hamlet?",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "What is the largest planet in our Solar ",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "A shop sells pens at 3 for 2 dollars. Ho",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "A car drives 60 mph for 2.5 hours then 4",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "Tom has 5 boxes with 8 apples each and g",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "Is 91 a prime number? Answer yes or no.",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "A tank holds 240 liters and drains 15 li",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "What are next week's winning lottery num",
+          "tier": "retrieve",
+          "escalated": false,
+          "correct": 0,
+          "prefilter": "normal"
+        },
+        {
+          "q": "What is the exact current population of ",
+          "tier": "verify",
+          "escalated": false,
+          "correct": 0,
+          "prefilter": "normal"
+        }
+      ]
+    },
+    {
+      "config": "no_memory",
+      "n": 10,
+      "accuracy": 0.8,
+      "mean_cost_usd": 0.0,
+      "mean_compute_units": 2110.8,
+      "escalation_rate": 0.0,
+      "mean_overhead_passes": 1.7,
+      "mean_latency_ms": 2996.5,
+      "rows": [
+        {
+          "q": "What is the capital of France?",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "Who wrote the play Hamlet?",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "What is the largest planet in our Solar ",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "A shop sells pens at 3 for 2 dollars. Ho",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "A car drives 60 mph for 2.5 hours then 4",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "Tom has 5 boxes with 8 apples each and g",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "Is 91 a prime number? Answer yes or no.",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "A tank holds 240 liters and drains 15 li",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "What are next week's winning lottery num",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 0,
+          "prefilter": "normal"
+        },
+        {
+          "q": "What is the exact current population of ",
+          "tier": "verify",
+          "escalated": false,
+          "correct": 0,
+          "prefilter": "normal"
+        }
+      ]
+    },
+    {
+      "config": "no_online",
+      "n": 10,
+      "accuracy": 0.8,
+      "mean_cost_usd": 0.0,
+      "mean_compute_units": 2398.3,
+      "escalation_rate": 0.0,
+      "mean_overhead_passes": 1.8,
+      "mean_latency_ms": 5019.1,
+      "rows": [
+        {
+          "q": "What is the capital of France?",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "Who wrote the play Hamlet?",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "What is the largest planet in our Solar ",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "A shop sells pens at 3 for 2 dollars. Ho",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "A car drives 60 mph for 2.5 hours then 4",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "Tom has 5 boxes with 8 apples each and g",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "Is 91 a prime number? Answer yes or no.",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "A tank holds 240 liters and drains 15 li",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "What are next week's winning lottery num",
+          "tier": "verify",
+          "escalated": false,
+          "correct": 0,
+          "prefilter": "normal"
+        },
+        {
+          "q": "What is the exact current population of ",
+          "tier": "verify",
+          "escalated": false,
+          "correct": 0,
+          "prefilter": "normal"
+        }
+      ]
+    },
+    {
+      "config": "none_added",
+      "n": 10,
+      "accuracy": 0.8,
+      "mean_cost_usd": 0.0,
+      "mean_compute_units": 1520.6,
+      "escalation_rate": 0.0,
+      "mean_overhead_passes": 1.2,
+      "mean_latency_ms": 2173.1,
+      "rows": [
+        {
+          "q": "What is the capital of France?",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "Who wrote the play Hamlet?",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "What is the largest planet in our Solar ",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "A shop sells pens at 3 for 2 dollars. Ho",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "A car drives 60 mph for 2.5 hours then 4",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "Tom has 5 boxes with 8 apples each and g",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "Is 91 a prime number? Answer yes or no.",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "A tank holds 240 liters and drains 15 li",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 1,
+          "prefilter": "normal"
+        },
+        {
+          "q": "What are next week's winning lottery num",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 0,
+          "prefilter": "normal"
+        },
+        {
+          "q": "What is the exact current population of ",
+          "tier": "fast",
+          "escalated": false,
+          "correct": 0,
+          "prefilter": "normal"
+        }
+      ]
+    }
+  ]
+}

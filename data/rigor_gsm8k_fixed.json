@@ -1,0 +1,60 @@
+{
+  "dataset": "gsm8k",
+  "n": 30,
+  "small_model": "ministral-8b",
+  "big_model": "gpt-oss-120b",
+  "configs": {
+    "always_small": {
+      "n": 30,
+      "accuracy": 0.8667,
+      "accuracy_ci95": [
+        0.7333,
+        0.9667
+      ],
+      "mean_cost_usd": 2.91e-05,
+      "mean_cost_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_cost_usd": 0.000873,
+      "escalation_rate": 0
+    },
+    "always_big": {
+      "n": 30,
+      "accuracy": 0.9333,
+      "accuracy_ci95": [
+        0.8333,
+        1.0
+      ],
+      "mean_cost_usd": 0.00011288,
+      "mean_cost_ci95": [
+        0.0001,
+        0.0001
+      ],
+      "total_cost_usd": 0.003386,
+      "escalation_rate": 0
+    },
+    "triage": {
+      "n": 30,
+      "accuracy": 0.8667,
+      "accuracy_ci95": [
+        0.7333,
+        0.9667
+      ],
+      "mean_cost_usd": 0.0001457,
+      "mean_cost_ci95": [
+        0.0001,
+        0.0002
+      ],
+      "total_cost_usd": 0.004371,
+      "escalation_rate": 0.133
+    }
+  },
+  "headline": {
+    "cost_savings_vs_big_pct": -29.1,
+    "quality_vs_big_pct": 92.9,
+    "quality_recovered_pct": 0.0,
+    "triage_escalation_rate": 0.133
+  },
+  "note": "NEGATIVE RESULT \u2014 published on purpose. After the over-escalation fix the router matched the small model's accuracy (86.7%) but on this 30-item sample it cost 29.1% MORE than always-big, because escalations (13.3%) added big-model spend without lifting accuracy. Honest quality_vs_big_pct = 92.9%. Models ministral-8b/gpt-oss-120b are now retired from the catalog."
+}

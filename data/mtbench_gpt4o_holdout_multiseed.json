@@ -1,0 +1,39 @@
+{
+  "source": "data/mtbench_gpt4o.json",
+  "seeds": 5,
+  "seeds_requested": 5,
+  "cost_reduction_pct": {
+    "mean": 96.0,
+    "min": 92.0,
+    "max": 100.0,
+    "per_seed": [
+      100.0,
+      100.0,
+      93.3,
+      94.7,
+      92.0
+    ]
+  },
+  "quality_vs_big_pct": {
+    "mean": 98.4,
+    "min": 96.0,
+    "max": 100.3,
+    "per_seed": [
+      99.4,
+      97.0,
+      96.0,
+      99.1,
+      100.3
+    ]
+  },
+  "n_escalated_per_test_half": {
+    "mean": 1.6,
+    "per_seed": [
+      0,
+      0,
+      3,
+      2,
+      3
+    ]
+  }
+}

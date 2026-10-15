@@ -1,0 +1,251 @@
+{
+  "n": 30,
+  "small": "ministral-8b",
+  "big": "gpt-4o",
+  "always_big_usd": 0.063733,
+  "svserve_usd": 0.01947,
+  "saved_pct": 69.5,
+  "escalations": 6,
+  "rows": [
+    {
+      "kind": "easy",
+      "q": "What is the capital of France?",
+      "big": 0.00017499999999999997,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "fast"
+    },
+    {
+      "kind": "easy",
+      "q": "What does HTTP stand for?",
+      "big": 0.0001825,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "retrieve"
+    },
+    {
+      "kind": "easy",
+      "q": "Translate 'good morning' to Spanish.",
+      "big": 0.0002375,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "retrieve"
+    },
+    {
+      "kind": "easy",
+      "q": "What is 17 x 24?",
+      "big": 0.0013375000000000001,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "tool"
+    },
+    {
+      "kind": "easy",
+      "q": "Name the largest planet in the solar system.",
+      "big": 0.00021,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "retrieve"
+    },
+    {
+      "kind": "easy",
+      "q": "Who wrote Romeo and Juliet?",
+      "big": 0.0002025,
+      "sv": 0.0002025,
+      "esc": true,
+      "tier": "escalate"
+    },
+    {
+      "kind": "easy",
+      "q": "What is the chemical symbol for gold?",
+      "big": 0.00019750000000000003,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "fast"
+    },
+    {
+      "kind": "easy",
+      "q": "Convert 100 fahrenheit to celsius.",
+      "big": 0.00143,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "fast"
+    },
+    {
+      "kind": "easy",
+      "q": "What year did World War II end?",
+      "big": 0.00019750000000000003,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "fast"
+    },
+    {
+      "kind": "easy",
+      "q": "Give me a one-line summary of what photosynthesis is.",
+      "big": 0.0004875,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "retrieve"
+    },
+    {
+      "kind": "easy",
+      "q": "What is the square root of 144?",
+      "big": 0.00021,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "tool"
+    },
+    {
+      "kind": "easy",
+      "q": "Rewrite this politely: 'send me the file now'.",
+      "big": 0.00026500000000000004,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "retrieve"
+    },
+    {
+      "kind": "med",
+      "q": "A bat and a ball cost $1.10 total; the bat costs $1 more than the ball. How much is the ball?",
+      "big": 0.0021575,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "fast"
+    },
+    {
+      "kind": "med",
+      "q": "If a train travels 240 km in 3 hours, then speeds up by 20 km/h, how long does the next 300 km take?",
+      "big": 0.003005,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "fast"
+    },
+    {
+      "kind": "med",
+      "q": "Explain briefly why the sky is blue.",
+      "big": 0.0009375,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "fast"
+    },
+    {
+      "kind": "med",
+      "q": "I have 3 apples, eat one, buy a dozen more, give half of everything away. How many do I have?",
+      "big": 0.0014625000000000003,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "fast"
+    },
+    {
+      "kind": "med",
+      "q": "What's the difference between a list and a tuple in Python, in two sentences?",
+      "big": 0.0006175,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "retrieve"
+    },
+    {
+      "kind": "med",
+      "q": "If today is Tuesday, what day is it 100 days from now? Show the math.",
+      "big": 0.002055,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "verify"
+    },
+    {
+      "kind": "med",
+      "q": "A shirt costs $25 after a 20% discount. What was the original price?",
+      "big": 0.0016324999999999998,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "fast"
+    },
+    {
+      "kind": "med",
+      "q": "Explain compound interest with a small numeric example.",
+      "big": 0.0038699999999999997,
+      "sv": 0.0039,
+      "esc": true,
+      "tier": "escalate"
+    },
+    {
+      "kind": "med",
+      "q": "Which is bigger, 2^10 or 10^3? Show why.",
+      "big": 0.00279,
+      "sv": 0.00283,
+      "esc": true,
+      "tier": "escalate"
+    },
+    {
+      "kind": "med",
+      "q": "Summarize the plot of Hamlet in three sentences.",
+      "big": 0.001595,
+      "sv": 0.001395,
+      "esc": true,
+      "tier": "escalate"
+    },
+    {
+      "kind": "hard",
+      "q": "Prove that the square root of 2 is irrational, step by step.",
+      "big": 0.0060975,
+      "sv": 0.0056775,
+      "esc": true,
+      "tier": "escalate"
+    },
+    {
+      "kind": "hard",
+      "q": "A farmer has chickens and rabbits, 35 heads and 94 legs total. Exactly how many of each? Show reasoning.",
+      "big": 0.00368,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "fast"
+    },
+    {
+      "kind": "hard",
+      "q": "Three people check into a hotel room that costs $30... explain the missing dollar riddle rigorously.",
+      "big": 0.004200000000000001,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "verify"
+    },
+    {
+      "kind": "hard",
+      "q": "Derive the formula for the sum of the first n odd numbers and prove it by induction.",
+      "big": 0.0066549999999999995,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "fast"
+    },
+    {
+      "kind": "hard",
+      "q": "Write a Python function that returns the longest palindromic substring, and explain its complexity.",
+      "big": 0.005505,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "verify"
+    },
+    {
+      "kind": "hard",
+      "q": "Two trains 300 km apart head toward each other at 70 and 80 km/h; a bird flies between them at 120 km/h until they meet. Total distance the bird flies?",
+      "big": 0.003135,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "fast"
+    },
+    {
+      "kind": "hard",
+      "q": "Explain why the halting problem is undecidable, with a sketch of the diagonalization argument.",
+      "big": 0.0055249999999999995,
+      "sv": 0.005465,
+      "esc": true,
+      "tier": "escalate"
+    },
+    {
+      "kind": "hard",
+      "q": "If 5 machines take 5 minutes to make 5 widgets, how long do 100 machines take to make 100 widgets? Then generalize to m machines, w widgets.",
+      "big": 0.00368,
+      "sv": 0.0,
+      "esc": false,
+      "tier": "fast"
+    }
+  ]
+}

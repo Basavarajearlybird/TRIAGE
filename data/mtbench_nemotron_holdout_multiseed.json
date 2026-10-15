@@ -1,0 +1,39 @@
+{
+  "source": "data/mtbench_nemotron.json",
+  "seeds": 5,
+  "seeds_requested": 5,
+  "cost_reduction_pct": {
+    "mean": 81.6,
+    "min": 75.7,
+    "max": 87.9,
+    "per_seed": [
+      82.0,
+      87.9,
+      81.1,
+      75.7,
+      81.1
+    ]
+  },
+  "quality_vs_big_pct": {
+    "mean": 103.1,
+    "min": 101.2,
+    "max": 105.9,
+    "per_seed": [
+      101.2,
+      104.2,
+      105.9,
+      101.2,
+      102.9
+    ]
+  },
+  "n_escalated_per_test_half": {
+    "mean": 6.6,
+    "per_seed": [
+      6,
+      4,
+      7,
+      9,
+      7
+    ]
+  }
+}

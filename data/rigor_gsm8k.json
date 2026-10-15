@@ -1,0 +1,60 @@
+{
+  "dataset": "gsm8k",
+  "n": 90,
+  "small_model": "ministral-8b",
+  "big_model": "gpt-oss-120b",
+  "configs": {
+    "always_small": {
+      "n": 90,
+      "accuracy": 0.9333,
+      "accuracy_ci95": [
+        0.8778,
+        0.9778
+      ],
+      "mean_cost_usd": 2.34e-05,
+      "mean_cost_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_cost_usd": 0.002106,
+      "escalation_rate": 0
+    },
+    "always_big": {
+      "n": 90,
+      "accuracy": 0.9111,
+      "accuracy_ci95": [
+        0.8444,
+        0.9667
+      ],
+      "mean_cost_usd": 0.00012162,
+      "mean_cost_ci95": [
+        0.0001,
+        0.0001
+      ],
+      "total_cost_usd": 0.010946,
+      "escalation_rate": 0
+    },
+    "triage": {
+      "n": 90,
+      "accuracy": 0.5111,
+      "accuracy_ci95": [
+        0.4,
+        0.6111
+      ],
+      "mean_cost_usd": 0.00010355,
+      "mean_cost_ci95": [
+        0.0001,
+        0.0001
+      ],
+      "total_cost_usd": 0.009319,
+      "escalation_rate": 0.578
+    }
+  },
+  "headline": {
+    "cost_savings_vs_big_pct": 14.9,
+    "quality_vs_big_pct": 56.1,
+    "quality_recovered_pct": null,
+    "triage_escalation_rate": 0.578
+  },
+  "note": "NEGATIVE RESULT \u2014 published on purpose. On this 90-item GSM8K sample the router OVER-ESCALATED (57.8%) and collapsed to 51.1% accuracy while both baselines held ~91-93%. quality_recovered_pct is null here because the big model was not better than the small one on this sample; quality_vs_big_pct (56.1%) is the honest quality figure. Fixed by raising escalation.risk_high and adding the online-learner floor; see data/rigor_gsm8k_fixed.json. Models ministral-8b/gpt-oss-120b are now retired from the catalog."
+}

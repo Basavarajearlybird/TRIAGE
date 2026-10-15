@@ -1,0 +1,170 @@
+{
+  "dataset": "gsm8k",
+  "n_per_seed": 30,
+  "seeds": 5,
+  "small_model": "gpt-4o-mini",
+  "big_model": "gpt-4o",
+  "accuracy": {
+    "always_small": {
+      "mean": 0.9467,
+      "std": 0.0183,
+      "ci95": [
+        0.9306,
+        0.9627
+      ],
+      "per_seed": [
+        0.9333,
+        0.9333,
+        0.9667,
+        0.9333,
+        0.9667
+      ],
+      "n_seeds": 5
+    },
+    "always_big": {
+      "mean": 0.9,
+      "std": 0.0624,
+      "ci95": [
+        0.8453,
+        0.9547
+      ],
+      "per_seed": [
+        0.8333,
+        0.9667,
+        0.8667,
+        0.8667,
+        0.9667
+      ],
+      "n_seeds": 5
+    },
+    "triage": {
+      "mean": 0.96,
+      "std": 0.0365,
+      "ci95": [
+        0.928,
+        0.992
+      ],
+      "per_seed": [
+        0.9667,
+        0.9667,
+        1,
+        0.9,
+        0.9667
+      ],
+      "n_seeds": 5
+    }
+  },
+  "mean_cost_usd": {
+    "always_small": {
+      "mean": 0.0002,
+      "std": 0.0,
+      "ci95": [
+        0.0002,
+        0.0002
+      ],
+      "per_seed": [
+        0.0002,
+        0.0002,
+        0.0002,
+        0.0002,
+        0.0002
+      ],
+      "n_seeds": 5
+    },
+    "always_big": {
+      "mean": 0.0024,
+      "std": 0.0001,
+      "ci95": [
+        0.0023,
+        0.0025
+      ],
+      "per_seed": [
+        0.0023,
+        0.0023,
+        0.0024,
+        0.0026,
+        0.0023
+      ],
+      "n_seeds": 5
+    },
+    "triage": {
+      "mean": 0.0004,
+      "std": 0.0001,
+      "ci95": [
+        0.0003,
+        0.0004
+      ],
+      "per_seed": [
+        0.0004,
+        0.0005,
+        0.0002,
+        0.0003,
+        0.0004
+      ],
+      "n_seeds": 5
+    }
+  },
+  "escalation_rate": {
+    "mean": 0.0864,
+    "std": 0.0506,
+    "ci95": [
+      0.0421,
+      0.1307
+    ],
+    "per_seed": [
+      0.1,
+      0.133,
+      0.033,
+      0.033,
+      0.133
+    ],
+    "n_seeds": 5
+  },
+  "cost_savings_vs_big_pct": {
+    "mean": 85.14,
+    "std": 4.3235,
+    "ci95": [
+      81.3502,
+      88.9298
+    ],
+    "per_seed": [
+      83.2,
+      80.5,
+      89.8,
+      89.7,
+      82.5
+    ],
+    "n_seeds": 5
+  },
+  "quality_vs_big_pct": 106.7,
+  "quality_recovered_pct": null,
+  "significance_pooled": {
+    "triage_vs_big_accuracy": {
+      "mean_diff": 0.06,
+      "ci95": [
+        0.0133,
+        0.1133
+      ],
+      "p_two_sided": 0.017,
+      "significant_at_0.05": true
+    },
+    "triage_vs_small_accuracy": {
+      "mean_diff": 0.0133,
+      "ci95": [
+        -0.02,
+        0.0467
+      ],
+      "p_two_sided": 0.536,
+      "significant_at_0.05": false
+    },
+    "triage_vs_big_cost": {
+      "mean_diff": -0.002,
+      "ci95": [
+        -0.0022,
+        -0.0019
+      ],
+      "p_two_sided": 0.0,
+      "significant_at_0.05": true
+    }
+  }
+}

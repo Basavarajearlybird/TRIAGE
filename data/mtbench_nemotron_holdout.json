@@ -1,0 +1,35 @@
+{
+  "source": "data/mtbench_nemotron.json",
+  "small": "nemotron-nano-9b",
+  "big": "gpt-4o",
+  "judge": "gpt-4o-mini",
+  "method": "50/50 held-out split; threshold picked on tune, reported on test",
+  "seed": 0,
+  "n_tune": 40,
+  "n_test": 40,
+  "tuned_threshold": 0.55,
+  "held_out_headline": {
+    "threshold": 0.55,
+    "cost_reduction_pct": 82.0,
+    "quality_vs_big_pct": 101.2,
+    "escalation_rate": 0.15,
+    "n_escalated": 6,
+    "n": 40,
+    "cost_reduction_ci95": [
+      67.0,
+      94.6
+    ],
+    "quality_vs_big_ci95": [
+      96.0,
+      108.5
+    ]
+  },
+  "in_sample_headline_for_reference": {
+    "threshold": 0.55,
+    "cost_reduction_pct": 78.6,
+    "quality_vs_big_pct": 103.8,
+    "escalation_rate": 0.163,
+    "n_escalated": 13,
+    "n": 80
+  }
+}

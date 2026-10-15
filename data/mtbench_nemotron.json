@@ -1,0 +1,879 @@
+{
+  "n": 80,
+  "small": "nemotron-nano-9b",
+  "big": "gpt-4o",
+  "judge": "gpt-4o-mini",
+  "always_big": {
+    "quality": 7.862,
+    "cost_usd": 0.27092
+  },
+  "always_small_quality": 7.338,
+  "curve": [
+    {
+      "threshold": 0.2,
+      "escalation_rate": 0.438,
+      "cost_usd": 0.11757,
+      "cost_reduction_pct": 56.6,
+      "quality": 7.925,
+      "quality_vs_big_pct": 100.8
+    },
+    {
+      "threshold": 0.25,
+      "escalation_rate": 0.425,
+      "cost_usd": 0.11639,
+      "cost_reduction_pct": 57.0,
+      "quality": 7.938,
+      "quality_vs_big_pct": 101.0
+    },
+    {
+      "threshold": 0.3,
+      "escalation_rate": 0.425,
+      "cost_usd": 0.11639,
+      "cost_reduction_pct": 57.0,
+      "quality": 7.938,
+      "quality_vs_big_pct": 101.0
+    },
+    {
+      "threshold": 0.35,
+      "escalation_rate": 0.362,
+      "cost_usd": 0.10583,
+      "cost_reduction_pct": 60.9,
+      "quality": 8.075,
+      "quality_vs_big_pct": 102.7
+    },
+    {
+      "threshold": 0.4,
+      "escalation_rate": 0.25,
+      "cost_usd": 0.07438,
+      "cost_reduction_pct": 72.5,
+      "quality": 8.1,
+      "quality_vs_big_pct": 103.0
+    },
+    {
+      "threshold": 0.45,
+      "escalation_rate": 0.188,
+      "cost_usd": 0.06134,
+      "cost_reduction_pct": 77.4,
+      "quality": 8.113,
+      "quality_vs_big_pct": 103.2
+    },
+    {
+      "threshold": 0.5,
+      "escalation_rate": 0.175,
+      "cost_usd": 0.05965,
+      "cost_reduction_pct": 78.0,
+      "quality": 8.125,
+      "quality_vs_big_pct": 103.3
+    },
+    {
+      "threshold": 0.55,
+      "escalation_rate": 0.163,
+      "cost_usd": 0.05788,
+      "cost_reduction_pct": 78.6,
+      "quality": 8.162,
+      "quality_vs_big_pct": 103.8
+    },
+    {
+      "threshold": 0.6,
+      "escalation_rate": 0.163,
+      "cost_usd": 0.05788,
+      "cost_reduction_pct": 78.6,
+      "quality": 8.162,
+      "quality_vs_big_pct": 103.8
+    },
+    {
+      "threshold": 0.65,
+      "escalation_rate": 0.163,
+      "cost_usd": 0.05788,
+      "cost_reduction_pct": 78.6,
+      "quality": 8.162,
+      "quality_vs_big_pct": 103.8
+    },
+    {
+      "threshold": 0.7,
+      "escalation_rate": 0.163,
+      "cost_usd": 0.05788,
+      "cost_reduction_pct": 78.6,
+      "quality": 8.162,
+      "quality_vs_big_pct": 103.8
+    },
+    {
+      "threshold": 0.75,
+      "escalation_rate": 0.163,
+      "cost_usd": 0.05788,
+      "cost_reduction_pct": 78.6,
+      "quality": 8.162,
+      "quality_vs_big_pct": 103.8
+    },
+    {
+      "threshold": 0.8,
+      "escalation_rate": 0.163,
+      "cost_usd": 0.05788,
+      "cost_reduction_pct": 78.6,
+      "quality": 8.162,
+      "quality_vs_big_pct": 103.8
+    },
+    {
+      "threshold": 0.85,
+      "escalation_rate": 0.163,
+      "cost_usd": 0.05788,
+      "cost_reduction_pct": 78.6,
+      "quality": 8.162,
+      "quality_vs_big_pct": 103.8
+    },
+    {
+      "threshold": 0.9,
+      "escalation_rate": 0.163,
+      "cost_usd": 0.05788,
+      "cost_reduction_pct": 78.6,
+      "quality": 8.162,
+      "quality_vs_big_pct": 103.8
+    },
+    {
+      "threshold": 0.95,
+      "escalation_rate": 0.163,
+      "cost_usd": 0.05788,
+      "cost_reduction_pct": 78.6,
+      "quality": 8.162,
+      "quality_vs_big_pct": 103.8
+    },
+    {
+      "threshold": 1.01,
+      "escalation_rate": 0.0,
+      "cost_usd": 0,
+      "cost_reduction_pct": 100.0,
+      "quality": 7.338,
+      "quality_vs_big_pct": 93.3
+    }
+  ],
+  "headline": {
+    "threshold": 0.55,
+    "escalation_rate": 0.163,
+    "cost_usd": 0.05788,
+    "cost_reduction_pct": 78.6,
+    "quality": 8.162,
+    "quality_vs_big_pct": 103.8
+  },
+  "rows": [
+    {
+      "id": 81,
+      "cat": "writing",
+      "risk": 0.05,
+      "small_score": 9.0,
+      "big_score": 8.0,
+      "big_cost": 0.00742,
+      "judge_cost": 0.00044669999999999996
+    },
+    {
+      "id": 82,
+      "cat": "writing",
+      "risk": 0.032,
+      "small_score": 8.0,
+      "big_score": 5.0,
+      "big_cost": 0.0019225000000000002,
+      "judge_cost": 0.0001737
+    },
+    {
+      "id": 83,
+      "cat": "writing",
+      "risk": 0.351,
+      "small_score": 9.0,
+      "big_score": 9.0,
+      "big_cost": 0.0034049999999999996,
+      "judge_cost": 0.00022319999999999998
+    },
+    {
+      "id": 84,
+      "cat": "writing",
+      "risk": 0.406,
+      "small_score": 8.0,
+      "big_score": 8.0,
+      "big_cost": 0.003045,
+      "judge_cost": 0.00021719999999999997
+    },
+    {
+      "id": 85,
+      "cat": "writing",
+      "risk": 1.0,
+      "small_score": 1.0,
+      "big_score": 9.0,
+      "big_cost": 0.0024925,
+      "judge_cost": 0.0001398
+    },
+    {
+      "id": 86,
+      "cat": "writing",
+      "risk": 0.426,
+      "small_score": 9.0,
+      "big_score": 9.0,
+      "big_cost": 0.0024324999999999998,
+      "judge_cost": 0.00017655
+    },
+    {
+      "id": 87,
+      "cat": "writing",
+      "risk": 0.335,
+      "small_score": 9.0,
+      "big_score": 9.0,
+      "big_cost": 0.0073475,
+      "judge_cost": 0.00040740000000000004
+    },
+    {
+      "id": 88,
+      "cat": "writing",
+      "risk": 0.459,
+      "small_score": 9.0,
+      "big_score": 8.0,
+      "big_cost": 0.0016925,
+      "judge_cost": 0.00019695
+    },
+    {
+      "id": 89,
+      "cat": "writing",
+      "risk": 0.36,
+      "small_score": 9.0,
+      "big_score": 9.0,
+      "big_cost": 0.00102,
+      "judge_cost": 0.00016245000000000002
+    },
+    {
+      "id": 90,
+      "cat": "writing",
+      "risk": 0.037,
+      "small_score": 9.0,
+      "big_score": 9.0,
+      "big_cost": 0.00106,
+      "judge_cost": 0.0001587
+    },
+    {
+      "id": 91,
+      "cat": "roleplay",
+      "risk": 0.517,
+      "small_score": 8.0,
+      "big_score": 5.0,
+      "big_cost": 0.001765,
+      "judge_cost": 0.00019409999999999997
+    },
+    {
+      "id": 92,
+      "cat": "roleplay",
+      "risk": 0.39,
+      "small_score": 9.0,
+      "big_score": 7.0,
+      "big_cost": 0.0022975,
+      "judge_cost": 0.0001977
+    },
+    {
+      "id": 93,
+      "cat": "roleplay",
+      "risk": 0.367,
+      "small_score": 9.0,
+      "big_score": 8.0,
+      "big_cost": 0.005999999999999999,
+      "judge_cost": 0.00035939999999999995
+    },
+    {
+      "id": 94,
+      "cat": "roleplay",
+      "risk": 0.352,
+      "small_score": 7.0,
+      "big_score": 9.0,
+      "big_cost": 0.0057275,
+      "judge_cost": 0.0002397
+    },
+    {
+      "id": 95,
+      "cat": "roleplay",
+      "risk": 0.395,
+      "small_score": 7.0,
+      "big_score": 7.0,
+      "big_cost": 0.0007149999999999999,
+      "judge_cost": 0.00016005000000000001
+    },
+    {
+      "id": 96,
+      "cat": "roleplay",
+      "risk": 0.349,
+      "small_score": 8.0,
+      "big_score": 1.0,
+      "big_cost": 0.0,
+      "judge_cost": 0.0001284
+    },
+    {
+      "id": 97,
+      "cat": "roleplay",
+      "risk": 0.034,
+      "small_score": 5.0,
+      "big_score": 5.0,
+      "big_cost": 0.0056700000000000006,
+      "judge_cost": 0.0
+    },
+    {
+      "id": 98,
+      "cat": "roleplay",
+      "risk": 0.435,
+      "small_score": 8.0,
+      "big_score": 8.0,
+      "big_cost": 0.0009875,
+      "judge_cost": 0.0001626
+    },
+    {
+      "id": 99,
+      "cat": "roleplay",
+      "risk": 1.0,
+      "small_score": 5.0,
+      "big_score": 5.0,
+      "big_cost": 0.001825,
+      "judge_cost": 0.00015089999999999998
+    },
+    {
+      "id": 100,
+      "cat": "roleplay",
+      "risk": 0.431,
+      "small_score": 9.0,
+      "big_score": 8.0,
+      "big_cost": 0.00163,
+      "judge_cost": 0.00020805
+    },
+    {
+      "id": 101,
+      "cat": "reasoning",
+      "risk": 0.035,
+      "small_score": 10.0,
+      "big_score": 10.0,
+      "big_cost": 0.00049,
+      "judge_cost": 0.000126
+    },
+    {
+      "id": 102,
+      "cat": "reasoning",
+      "risk": 0.328,
+      "small_score": 7.0,
+      "big_score": 6.0,
+      "big_cost": 0.0007475,
+      "judge_cost": 0.00013125
+    },
+    {
+      "id": 103,
+      "cat": "reasoning",
+      "risk": 0.032,
+      "small_score": 8.0,
+      "big_score": 8.0,
+      "big_cost": 0.0021625,
+      "judge_cost": 0.0001929
+    },
+    {
+      "id": 104,
+      "cat": "reasoning",
+      "risk": 0.034,
+      "small_score": 8.0,
+      "big_score": 9.0,
+      "big_cost": 0.000705,
+      "judge_cost": 0.00011655
+    },
+    {
+      "id": 105,
+      "cat": "reasoning",
+      "risk": 0.024,
+      "small_score": 3.0,
+      "big_score": 9.0,
+      "big_cost": 0.00562,
+      "judge_cost": 0.0002805
+    },
+    {
+      "id": 106,
+      "cat": "reasoning",
+      "risk": 0.03,
+      "small_score": 8.0,
+      "big_score": 9.0,
+      "big_cost": 0.0024575,
+      "judge_cost": 0.00018629999999999997
+    },
+    {
+      "id": 107,
+      "cat": "reasoning",
+      "risk": 0.032,
+      "small_score": 10.0,
+      "big_score": 10.0,
+      "big_cost": 0.001255,
+      "judge_cost": 0.0001302
+    },
+    {
+      "id": 108,
+      "cat": "reasoning",
+      "risk": 0.04,
+      "small_score": 8.0,
+      "big_score": 5.0,
+      "big_cost": 0.0009625,
+      "judge_cost": 0.00011985
+    },
+    {
+      "id": 109,
+      "cat": "reasoning",
+      "risk": 0.317,
+      "small_score": 8.0,
+      "big_score": 9.0,
+      "big_cost": 0.0024674999999999996,
+      "judge_cost": 0.00018345
+    },
+    {
+      "id": 110,
+      "cat": "reasoning",
+      "risk": 0.201,
+      "small_score": 9.0,
+      "big_score": 8.0,
+      "big_cost": 0.0011749999999999998,
+      "judge_cost": 0.0001794
+    },
+    {
+      "id": 111,
+      "cat": "math",
+      "risk": 0.021,
+      "small_score": 9.0,
+      "big_score": 10.0,
+      "big_cost": 0.004195,
+      "judge_cost": 0.00025005
+    },
+    {
+      "id": 112,
+      "cat": "math",
+      "risk": 0.028,
+      "small_score": 8.0,
+      "big_score": 10.0,
+      "big_cost": 0.0017300000000000002,
+      "judge_cost": 0.00014099999999999998
+    },
+    {
+      "id": 113,
+      "cat": "math",
+      "risk": 0.027,
+      "small_score": 9.0,
+      "big_score": 10.0,
+      "big_cost": 0.0032300000000000002,
+      "judge_cost": 0.00021239999999999999
+    },
+    {
+      "id": 114,
+      "cat": "math",
+      "risk": 0.023,
+      "small_score": 8.0,
+      "big_score": 10.0,
+      "big_cost": 0.0035125,
+      "judge_cost": 0.00018495
+    },
+    {
+      "id": 115,
+      "cat": "math",
+      "risk": 0.019,
+      "small_score": 10.0,
+      "big_score": 10.0,
+      "big_cost": 0.003905,
+      "judge_cost": 0.00022245
+    },
+    {
+      "id": 116,
+      "cat": "math",
+      "risk": 0.02,
+      "small_score": 8.0,
+      "big_score": 8.0,
+      "big_cost": 0.0037199999999999998,
+      "judge_cost": 0.00026175
+    },
+    {
+      "id": 117,
+      "cat": "math",
+      "risk": 0.02,
+      "small_score": 10.0,
+      "big_score": 10.0,
+      "big_cost": 0.004495,
+      "judge_cost": 0.00023685
+    },
+    {
+      "id": 118,
+      "cat": "math",
+      "risk": 1.0,
+      "small_score": 5.0,
+      "big_score": 10.0,
+      "big_cost": 0.00317,
+      "judge_cost": 0.0001548
+    },
+    {
+      "id": 119,
+      "cat": "math",
+      "risk": 0.022,
+      "small_score": 10.0,
+      "big_score": 10.0,
+      "big_cost": 0.0023675,
+      "judge_cost": 0.00016365
+    },
+    {
+      "id": 120,
+      "cat": "math",
+      "risk": 0.026,
+      "small_score": 5.0,
+      "big_score": 5.0,
+      "big_cost": 0.0028850000000000004,
+      "judge_cost": 0.00021299999999999997
+    },
+    {
+      "id": 121,
+      "cat": "coding",
+      "risk": 1.0,
+      "small_score": 1.0,
+      "big_score": 9.0,
+      "big_cost": 0.0059825,
+      "judge_cost": 0.00021419999999999998
+    },
+    {
+      "id": 122,
+      "cat": "coding",
+      "risk": 0.027,
+      "small_score": 9.0,
+      "big_score": 10.0,
+      "big_cost": 0.0041825000000000005,
+      "judge_cost": 0.0002814
+    },
+    {
+      "id": 123,
+      "cat": "coding",
+      "risk": 0.025,
+      "small_score": 9.0,
+      "big_score": 10.0,
+      "big_cost": 0.006835,
+      "judge_cost": 0.00028275
+    },
+    {
+      "id": 124,
+      "cat": "coding",
+      "risk": 0.026,
+      "small_score": 5.0,
+      "big_score": 8.0,
+      "big_cost": 0.003995,
+      "judge_cost": 0.00024525
+    },
+    {
+      "id": 125,
+      "cat": "coding",
+      "risk": 1.0,
+      "small_score": 1.0,
+      "big_score": 7.0,
+      "big_cost": 0.006592499999999999,
+      "judge_cost": 0.00024209999999999998
+    },
+    {
+      "id": 126,
+      "cat": "coding",
+      "risk": 1.0,
+      "small_score": 1.0,
+      "big_score": 4.0,
+      "big_cost": 0.006937499999999999,
+      "judge_cost": 0.00023265
+    },
+    {
+      "id": 127,
+      "cat": "coding",
+      "risk": 0.015,
+      "small_score": 10.0,
+      "big_score": 9.0,
+      "big_cost": 0.004945000000000001,
+      "judge_cost": 0.000258
+    },
+    {
+      "id": 128,
+      "cat": "coding",
+      "risk": 1.0,
+      "small_score": 5.0,
+      "big_score": 9.0,
+      "big_cost": 0.005105000000000001,
+      "judge_cost": 0.00021285
+    },
+    {
+      "id": 129,
+      "cat": "coding",
+      "risk": 0.024,
+      "small_score": 8.0,
+      "big_score": 9.0,
+      "big_cost": 0.006477500000000001,
+      "judge_cost": 0.00031184999999999996
+    },
+    {
+      "id": 130,
+      "cat": "coding",
+      "risk": 1.0,
+      "small_score": 1.0,
+      "big_score": 9.0,
+      "big_cost": 0.0039725,
+      "judge_cost": 0.00017235
+    },
+    {
+      "id": 131,
+      "cat": "extraction",
+      "risk": 0.036,
+      "small_score": 5.0,
+      "big_score": 5.0,
+      "big_cost": 0.00063,
+      "judge_cost": 0.00014385
+    },
+    {
+      "id": 132,
+      "cat": "extraction",
+      "risk": 0.042,
+      "small_score": 5.0,
+      "big_score": 5.0,
+      "big_cost": 0.0006575,
+      "judge_cost": 0.0001716
+    },
+    {
+      "id": 133,
+      "cat": "extraction",
+      "risk": 0.029,
+      "small_score": 10.0,
+      "big_score": 10.0,
+      "big_cost": 0.0017200000000000002,
+      "judge_cost": 0.00023129999999999998
+    },
+    {
+      "id": 134,
+      "cat": "extraction",
+      "risk": 0.025,
+      "small_score": 9.0,
+      "big_score": 10.0,
+      "big_cost": 0.001565,
+      "judge_cost": 0.0001848
+    },
+    {
+      "id": 135,
+      "cat": "extraction",
+      "risk": 0.032,
+      "small_score": 8.0,
+      "big_score": 8.0,
+      "big_cost": 0.0013449999999999998,
+      "judge_cost": 0.0001782
+    },
+    {
+      "id": 136,
+      "cat": "extraction",
+      "risk": 0.029,
+      "small_score": 6.0,
+      "big_score": 8.0,
+      "big_cost": 0.0008900000000000001,
+      "judge_cost": 0.00017475
+    },
+    {
+      "id": 137,
+      "cat": "extraction",
+      "risk": 0.036,
+      "small_score": 10.0,
+      "big_score": 5.0,
+      "big_cost": 0.0013224999999999999,
+      "judge_cost": 0.00019769999999999998
+    },
+    {
+      "id": 138,
+      "cat": "extraction",
+      "risk": 0.044,
+      "small_score": 5.0,
+      "big_score": 5.0,
+      "big_cost": 0.00466,
+      "judge_cost": 0.00026535
+    },
+    {
+      "id": 139,
+      "cat": "extraction",
+      "risk": 1.0,
+      "small_score": 2.0,
+      "big_score": 9.0,
+      "big_cost": 0.0045024999999999996,
+      "judge_cost": 0.00021179999999999997
+    },
+    {
+      "id": 140,
+      "cat": "extraction",
+      "risk": 1.0,
+      "small_score": 5.0,
+      "big_score": 6.0,
+      "big_cost": 0.0031725,
+      "judge_cost": 0.0002169
+    },
+    {
+      "id": 141,
+      "cat": "stem",
+      "risk": 0.045,
+      "small_score": 9.0,
+      "big_score": 1.0,
+      "big_cost": 0.0,
+      "judge_cost": 0.00010409999999999998
+    },
+    {
+      "id": 142,
+      "cat": "stem",
+      "risk": 1.0,
+      "small_score": 5.0,
+      "big_score": 9.0,
+      "big_cost": 0.003035,
+      "judge_cost": 0.00017624999999999997
+    },
+    {
+      "id": 143,
+      "cat": "stem",
+      "risk": 0.031,
+      "small_score": 9.0,
+      "big_score": 9.0,
+      "big_cost": 0.0036025,
+      "judge_cost": 0.00022979999999999997
+    },
+    {
+      "id": 144,
+      "cat": "stem",
+      "risk": 0.346,
+      "small_score": 5.0,
+      "big_score": 1.0,
+      "big_cost": 0.0,
+      "judge_cost": 0.00011085000000000001
+    },
+    {
+      "id": 145,
+      "cat": "stem",
+      "risk": 0.036,
+      "small_score": 9.0,
+      "big_score": 9.0,
+      "big_cost": 0.004775000000000001,
+      "judge_cost": 0.00026579999999999996
+    },
+    {
+      "id": 146,
+      "cat": "stem",
+      "risk": 0.103,
+      "small_score": 9.0,
+      "big_score": 1.0,
+      "big_cost": 0.0,
+      "judge_cost": 0.00011864999999999998
+    },
+    {
+      "id": 147,
+      "cat": "stem",
+      "risk": 0.051,
+      "small_score": 9.0,
+      "big_score": 9.0,
+      "big_cost": 0.0046225,
+      "judge_cost": 0.0002709
+    },
+    {
+      "id": 148,
+      "cat": "stem",
+      "risk": 0.132,
+      "small_score": 9.0,
+      "big_score": 9.0,
+      "big_cost": 0.0051375,
+      "judge_cost": 0.0003336
+    },
+    {
+      "id": 149,
+      "cat": "stem",
+      "risk": 0.037,
+      "small_score": 9.0,
+      "big_score": 9.0,
+      "big_cost": 0.0045175,
+      "judge_cost": 0.0003453
+    },
+    {
+      "id": 150,
+      "cat": "stem",
+      "risk": 0.354,
+      "small_score": 9.0,
+      "big_score": 8.0,
+      "big_cost": 0.0029850000000000002,
+      "judge_cost": 0.00019965
+    },
+    {
+      "id": 151,
+      "cat": "humanities",
+      "risk": 0.035,
+      "small_score": 9.0,
+      "big_score": 9.0,
+      "big_cost": 0.0071874999999999994,
+      "judge_cost": 0.00038009999999999997
+    },
+    {
+      "id": 152,
+      "cat": "humanities",
+      "risk": 0.359,
+      "small_score": 9.0,
+      "big_score": 9.0,
+      "big_cost": 0.0057025,
+      "judge_cost": 0.0003021
+    },
+    {
+      "id": 153,
+      "cat": "humanities",
+      "risk": 0.108,
+      "small_score": 8.0,
+      "big_score": 8.0,
+      "big_cost": 0.0088725,
+      "judge_cost": 0.0004311
+    },
+    {
+      "id": 154,
+      "cat": "humanities",
+      "risk": 0.04,
+      "small_score": 7.0,
+      "big_score": 8.0,
+      "big_cost": 0.00823,
+      "judge_cost": 0.0003699
+    },
+    {
+      "id": 155,
+      "cat": "humanities",
+      "risk": 0.415,
+      "small_score": 9.0,
+      "big_score": 9.0,
+      "big_cost": 0.004940000000000001,
+      "judge_cost": 0.0002571
+    },
+    {
+      "id": 156,
+      "cat": "humanities",
+      "risk": 0.115,
+      "small_score": 8.0,
+      "big_score": 8.0,
+      "big_cost": 0.0038650000000000004,
+      "judge_cost": 0.00025845
+    },
+    {
+      "id": 157,
+      "cat": "humanities",
+      "risk": 0.109,
+      "small_score": 9.0,
+      "big_score": 9.0,
+      "big_cost": 0.0035475,
+      "judge_cost": 0.00019245
+    },
+    {
+      "id": 158,
+      "cat": "humanities",
+      "risk": 0.368,
+      "small_score": 9.0,
+      "big_score": 9.0,
+      "big_cost": 0.003605,
+      "judge_cost": 0.0002025
+    },
+    {
+      "id": 159,
+      "cat": "humanities",
+      "risk": 1.0,
+      "small_score": 5.0,
+      "big_score": 9.0,
+      "big_cost": 0.0055375,
+      "judge_cost": 0.00018585
+    },
+    {
+      "id": 160,
+      "cat": "humanities",
+      "risk": 1.0,
+      "small_score": 1.0,
+      "big_score": 9.0,
+      "big_cost": 0.0055575,
+      "judge_cost": 0.00019140000000000002
+    }
+  ]
+}
