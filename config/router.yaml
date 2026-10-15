@@ -1,0 +1,102 @@
+# Every router threshold lives here; none are hard-coded in the router. All
+# signals are normalised to 0..1 before comparison.
+
+# Which signals to compute. Disabling one lowers the cost and latency of routing.
+signals:
+  uncertainty: true
+  instability: true
+  contradiction: true
+  retrieval_disagreement: true
+  evidence_sufficiency: true
+
+proxy:
+  resamples: 3               # N for instability and resample-entropy uncertainty
+  resample_temperature: 0.7
+  base_temperature: 0.2
+  max_tokens: 2048           # headroom so reasoning models finish rather than
+                             # truncating mid-thought and returning empty content
+
+tiers:
+  # Cost-aware cascade gate. The main pass returns logprobs, so uncertainty U is
+  # free; only when U >= signal_gate do we spend extra calls on the deep signals
+  # (resamples + the contradiction probe). This is what keeps confident requests
+  # genuinely single-pass. A model that returns no logprobs must be resampled to
+  # produce any U at all, so the gate is bypassed for those.
+  #
+  # Instruction-tuned models are overconfident: their token logprobs compress U
+  # into a narrow low band (llama-3.1-8b sits around 0.05-0.35). These thresholds
+  # are therefore calibrated to that band rather than set at absolute values. The
+  # ordering of U remains informative (clean facts low, ambiguous high), which is
+  # what the gate needs. A per-model percentile calibration would be the proper
+  # fix and is not implemented.
+  signal_gate: 0.15
+  tau_star: 0.28                  # Tier 1: U above this retrieves
+  instability_high: 0.40          # Tier 2 conflict: resample disagreement
+  contradiction_high: 0.5         # Tier 2 conflict: self-check score
+  evidence_low: 0.40              # Tier 2: evidence too weak to ground the answer
+  retrieval_disagreement_high: 0.5
+  long_context_tokens: 8000       # Tier-L detection flag only; see longcontext.py
+
+# Signal-driven escalation, small -> big. Deliberately selective: escalating
+# often makes the router cost MORE than always-big, because both models are paid
+# for. The value is in escalating only the hard minority. data/rigor_gsm8k.json
+# records what happened when risk_high was too low.
+escalation:
+  enabled: true
+  default_target: gpt-4o          # per-model `escalate_to` overrides this
+  risk_high: 0.55
+  max_escalations: 1
+
+# Deterministic tools, tried before any model call.
+tools:
+  calculator: true                # exact arithmetic, roots, powers; zero cost
+
+verify:
+  max_rounds: 1
+  cost_multiplier_cap: 6.0        # skip verify above this multiple of the main pass
+  # Tokens a verify pass is assumed to add over the main pass, used only by the
+  # cost guard above. A configured constant, never measured per request; no
+  # reported result depends on its value.
+  overhead_tokens: 400
+
+# Tier -1 pre-filter (optional add-on; see docs/results.md for its ablation).
+prefilter:
+  enabled: true
+  hard_direct: 0.70               # difficulty at or above this skips the small pass
+  easy_direct: 0.22               # at or below this, and memory-safe, takes the fast path
+  memory_min_neighbours: 2
+  safe_escalation_rate: 0.20      # memory is "safe" if similar prompts escalated <= this
+  safe_risk: 0.35                 # ...and their mean abstain risk was <= this
+
+# Semantic routing memory (optional add-on). In-process; see router/memory.py.
+memory:
+  enabled: true
+  k: 5
+  min_similarity: 0.60
+
+# Online escalation-threshold controller (optional add-on). Label-free.
+online_learning:
+  enabled: true
+  target_escalation_rate: 0.20
+  risk_high_floor: 0.45           # the floor prevents learning into over-escalation
+  risk_high_ceil: 0.72
+  step: 0.02
+
+# Abstain policy. abstain() is a pure multi-signal function: no single signal can
+# force an abstain. The weighted risk must cross abstain_threshold AND at least
+# min_elevated_signals signals must individually exceed min_elevated_level.
+# tests/test_abstain.py enforces this invariant.
+abstain:
+  weights:
+    uncertainty: 0.25
+    instability: 0.25
+    contradiction: 0.20
+    retrieval_disagreement: 0.15
+    evidence_insufficiency: 0.15  # = 1 - evidence_sufficiency
+  abstain_threshold: 0.62
+  min_elevated_signals: 2
+  min_elevated_level: 0.5
+
+retrieval:
+  top_k: 4
+  min_score: 0.20                 # cosine floor for a hit to count

@@ -1,0 +1,100 @@
+# Model catalog.
+#
+#   provider / provider_model  where to send the request and under what name
+#   alt                        fallback providers, used when the primary has no key
+#   cost_in / cost_out         USD per 1M tokens, used to compute every reported
+#                              bill. OpenAI rows are public list prices; the
+#                              NVIDIA and OpenRouter rows are 0 because those
+#                              lanes are served on free tiers (see docs/results.md
+#                              on what a $0 lane does and does not mean)
+#   size_b                     parameters in billions; 0 where weights are closed
+#   default_small              the router's auto-pick when no model is given
+#   escalate_to                this model's escalation target
+#
+# ministral-8b and gpt-oss-120b appear in data/ but not here: they were retired
+# from the catalog after the GSM8K runs. Those results cannot be re-run as
+# committed. See docs/results.md.
+
+models:
+  - id: gpt-4o-mini
+    provider: openai
+    provider_model: "gpt-4o-mini"
+    size_b: 0
+    cost_in: 0.15
+    cost_out: 0.60
+    escalate_to: gpt-4o
+
+  - id: gpt-4o
+    provider: openai
+    provider_model: "gpt-4o"
+    size_b: 0
+    cost_in: 2.50
+    cost_out: 10.00
+
+  - id: gpt-5-mini
+    provider: openai
+    provider_model: "gpt-5-mini"
+    size_b: 0
+    cost_in: 0.25
+    cost_out: 2.00
+    escalate_to: gpt-5
+
+  - id: gpt-5
+    provider: openai
+    provider_model: "gpt-5"
+    size_b: 0
+    cost_in: 1.25
+    cost_out: 10.00
+
+  # ---- NVIDIA NIM free lane -------------------------------------------------
+  - id: llama-3.1-8b
+    provider: nvidia
+    provider_model: "meta/llama-3.1-8b-instruct"
+    alt:
+      groq: "llama-3.1-8b-instant"
+    size_b: 8
+    cost_in: 0.0
+    cost_out: 0.0
+    default_small: true          # fast, free, and returns logprobs
+    escalate_to: gpt-4o
+
+  - id: nemotron-nano-9b
+    provider: nvidia
+    provider_model: "nvidia/nvidia-nemotron-nano-9b-v2"
+    size_b: 9
+    cost_in: 0.0
+    cost_out: 0.0
+
+  - id: llama-3.3-70b
+    provider: nvidia
+    provider_model: "meta/llama-3.3-70b-instruct"
+    alt:
+      groq: "llama-3.3-70b-versatile"
+      openrouter: "meta-llama/llama-3.3-70b-instruct:free"
+    size_b: 70
+    cost_in: 0.0
+    cost_out: 0.0
+
+  - id: llama-3.1-70b
+    provider: nvidia
+    provider_model: "meta/llama-3.1-70b-instruct"
+    size_b: 70
+    cost_in: 0.0
+    cost_out: 0.0
+
+  - id: nemotron-super-49b
+    provider: nvidia
+    provider_model: "nvidia/llama-3.3-nemotron-super-49b-v1"
+    size_b: 49
+    cost_in: 0.0
+    cost_out: 0.0
+
+  # ---- OpenRouter opt-in lane -----------------------------------------------
+  # `:free` models allow roughly 50 requests/day, enough for a single run but not
+  # for a benchmark sweep. Id verified live 2026-07-15.
+  - id: nemotron-ultra-550b-free
+    provider: openrouter
+    provider_model: "nvidia/nemotron-3-ultra-550b-a55b:free"
+    size_b: 550
+    cost_in: 0.0
+    cost_out: 0.0
