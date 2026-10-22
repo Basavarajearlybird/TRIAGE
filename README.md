@@ -19,6 +19,14 @@
 
 ---
 
+
+Training-free, reliability-conditioned inference allocator for LLMs (Work in Progress). 
+Test live: https://triage-o6q3.onrender.com/
+
+
+
+
+
 > **📌 Project Status Note (Work in Progress):** This repository contains the reference implementation, benchmark harness, closed-loop FastAPI serving stack, and per-query empirical receipts for **TRIAGE (Work in Progress)**. Multi-seed holdout extensions, random/oracle/prompt-router baselines, and expanded statistical evaluations are actively being integrated into `data/` and `scripts/`.
 
 **Triage** is a reliability-aware router and compute allocator for text LLMs. Every request is answered first by a cheap or free small model; inexpensive black-box reliability signals computed on that model's *actual answer* decide what happens next: **ship it immediately**, **retrieve external evidence**, **verify and revise**, **escalate to a paid strong frontier model**, or **abstain to human review (`PENDING_REVIEW`)**. There is no router training, no preference dataset collection, and no per-pair calibration, so any small model can be paired with any large one out of the box.
@@ -37,6 +45,9 @@ The claim under test is that **observing the cheap model's own output** is a bet
 </div>
 
 ---
+
+Training-free, reliability-conditioned inference allocator for LLMs (Work in Progress). 
+Test live: https://triage-o6q3.onrender.com/
 
 ## ⚡ Executive Empirical Scorecard at a Glance
 
