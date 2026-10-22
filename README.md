@@ -20,9 +20,12 @@
 ---
 
 
-Training-free, reliability-conditioned inference allocator for LLMs (Work in Progress).
+Training-free, reliability-conditioned inference allocator for LLMs (Work in Progress).  
+<br>
 
-Test live system: https://triage-o6q3.onrender.com/
+> **🌐 Test Live Interactive System:** [https://triage-o6q3.onrender.com/](https://triage-o6q3.onrender.com/)
+
+<br>
 
 
 
@@ -47,8 +50,6 @@ The claim under test is that **observing the cheap model's own output** is a bet
 
 ---
 
-
-Test live: https://triage-o6q3.onrender.com/
 
 
 
