@@ -503,6 +503,7 @@ python scripts/showtime.py
 <div align="center">
 
 **TRIAGE Research & Engineering Artifact (Work in Progress)**  
-*Observe-Then-Allocate Compute Routing with Black-Box Reliability Signals* • All claims backed by committed per-query receipts in `data/`
+*Observe-Then-Allocate Compute Routing with Black-Box Reliability Signals*  
+🔗 **[Access Live Interactive System & Receipts](https://triage-o6q3.onrender.com/)** • All claims backed by committed per-query receipts in `data/`
 
 </div>
