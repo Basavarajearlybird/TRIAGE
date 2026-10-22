@@ -517,7 +517,7 @@ python scripts/showtime.py
 <div align="center">
 
 *TRIAGE Research & Engineering Artifact (Work in Progress)*  
-*Observe-Then-Allocate Compute Routing with Black-Box Reliability Signals*  
+*Training-free, reliability-conditioned inference allocator for LLMs*  
 <br>
 [![Access Live System](https://img.shields.io/badge/🌐%20LIVE%20SYSTEM-ACCESS%20TRIAGE%20ON%20RENDER-059669?style=for-the-badge&logo=render&logoColor=white)](https://triage-o6q3.onrender.com/)  
 <br>
