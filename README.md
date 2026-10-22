@@ -20,8 +20,9 @@
 ---
 
 
-Training-free, reliability-conditioned inference allocator for LLMs (Work in Progress). 
-Test live: https://triage-o6q3.onrender.com/
+Training-free, reliability-conditioned inference allocator for LLMs (Work in Progress).
+
+Test live system: https://triage-o6q3.onrender.com/
 
 
 
@@ -46,8 +47,10 @@ The claim under test is that **observing the cheap model's own output** is a bet
 
 ---
 
-Training-free, reliability-conditioned inference allocator for LLMs (Work in Progress). 
+
 Test live: https://triage-o6q3.onrender.com/
+
+
 
 ## ⚡ Executive Empirical Scorecard at a Glance
 
