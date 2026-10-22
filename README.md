@@ -22,13 +22,12 @@
 
 Training-free, reliability-conditioned inference allocator for LLMs (Work in Progress).  
 <br>
-
-> **🌐 Test Live Interactive System:** [https://triage-o6q3.onrender.com/](https://triage-o6q3.onrender.com/)
-
 <br>
 
+[![Test Live System](https://img.shields.io/badge/🌐%20TEST%20LIVE%20SYSTEM-ACCESS%20TRIAGE%20ON%20RENDER-059669?style=for-the-badge&logo=render&logoColor=white)](https://triage-o6q3.onrender.com/)
 
-
+<br>
+<br>
 
 
 > **📌 Project Status Note (Work in Progress):** This repository contains the reference implementation, benchmark harness, closed-loop FastAPI serving stack, and per-query empirical receipts for **TRIAGE (Work in Progress)**. Multi-seed holdout extensions, random/oracle/prompt-router baselines, and expanded statistical evaluations are actively being integrated into `data/` and `scripts/`.
