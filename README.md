@@ -516,8 +516,11 @@ python scripts/showtime.py
 
 <div align="center">
 
-**TRIAGE Research & Engineering Artifact (Work in Progress)**  
+*TRIAGE Research & Engineering Artifact (Work in Progress)*  
 *Observe-Then-Allocate Compute Routing with Black-Box Reliability Signals*  
-🔗 **[Access Live Interactive System & Receipts](https://triage-o6q3.onrender.com/)** • All claims backed by committed per-query receipts in `data/`
+<br>
+[![Access Live System](https://img.shields.io/badge/🌐%20LIVE%20SYSTEM-ACCESS%20TRIAGE%20ON%20RENDER-059669?style=for-the-badge&logo=render&logoColor=white)](https://triage-o6q3.onrender.com/)  
+<br>
+<small>All claims backed by committed per-query receipts in `data/`</small>
 
 </div>
