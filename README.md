@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ TRIAGE: Observe-Then-Allocate Routing of Language-Model Compute with Black-Box Reliability Signals
+# ⚡ TRIAGE: Reliability-Conditioned Inference Allocation for Large Language Models
 
 ### *Training-Free, Reliability-Conditioned Inference Allocation Across Commodity LLM APIs (Work in Progress)*
 
