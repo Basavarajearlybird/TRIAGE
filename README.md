@@ -20,10 +20,8 @@
 ---
 
 
-Training-free, reliability-conditioned inference allocator for LLMs (Work in Progress).  
+*Training-free, reliability-conditioned inference allocator for LLMs (Work in Progress).*
 <br>
-<br>
-
 [![Test Live System](https://img.shields.io/badge/🌐%20TEST%20LIVE%20SYSTEM-ACCESS%20TRIAGE%20ON%20RENDER-059669?style=for-the-badge&logo=render&logoColor=white)](https://triage-o6q3.onrender.com/)
 
 <br>
